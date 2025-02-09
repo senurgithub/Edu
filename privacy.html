@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - EduLearn</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --primary: #2A2A72;
+            --secondary: #009FFD;
+            --accent: #FFA400;
+            --text: #2D2D2D;
+            --background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .policy-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            position: relative;
+            padding-bottom: 15px;
+            opacity: 0;
+            animation: slideInLeft 0.8s 0.3s ease-out forwards;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-top: 40px;
+            font-size: 2em;
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideInRight 0.6s 0.4s forwards;
+        }
+
+        h3 {
+            color: var(--secondary);
+            margin-top: 30px;
+            font-size: 1.5em;
+            opacity: 0;
+            animation: fadeIn 0.6s 0.5s forwards;
+        }
+
+        h4 {
+            color: var(--secondary);
+            margin-top: 25px;
+            opacity: 0;
+            animation: fadeIn 0.6s 0.6s forwards;
+        }
+
+        p {
+            margin: 15px 0;
+            opacity: 0;
+            animation: fadeIn 0.6s 0.7s forwards;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            opacity: 0;
+            animation: fadeIn 0.6s 0.8s forwards;
+        }
+
+        li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: fadeIn 0.6s 1s forwards;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 159, 253, 0.3);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 300px;
+            background: url('https://images.unsplash.com/photo-1586282391129-76a6df230234?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeIn 0.8s 0.2s forwards;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .policy-container {
+                padding: 25px;
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            .hero-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="policy-container">
+        <!-- Hero Image -->
+        <div class="hero-image"></div>
+
+        <h1>Privacy Policy</h1>
+        <p>Last updated: February 09, 2025</p>
+        <p>This Privacy Policy describes Our policies and procedures on the collection, use, and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+        <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.privacypolicies.com/privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.</p>
+
+        <h2>Why Privacy Matters</h2>
+        <p>Privacy is a fundamental human right. At EduLearn, we are committed to protecting your personal information and ensuring transparency in how we collect, use, and share your data. We believe that trust is the foundation of any relationship, and we strive to earn and maintain your trust by safeguarding your privacy.</p>
+
+        <h2>Interpretation and Definitions</h2>
+        <h3>Interpretation</h3>
+        <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+
+        <h3>Definitions</h3>
+        <p>For the purposes of this Privacy Policy:</p>
+        <ul>
+            <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
+            <li><strong>Affiliate</strong> means an entity that controls, is controlled by, or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest, or other securities entitled to vote for election of directors or other managing authority.</li>
+            <li><strong>Company</strong> (referred to as either "the Company", "We", "Us", or "Our" in this Agreement) refers to EduLearn.</li>
+            <li><strong>Cookies</strong> are small files that are placed on Your computer, mobile device, or any other device by a website, containing the details of Your browsing history on that website among its many uses.</li>
+            <li><strong>Country</strong> refers to: Sri Lanka.</li>
+            <li><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone, or a digital tablet.</li>
+            <li><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</li>
+            <li><strong>Service</strong> refers to the Website.</li>
+            <li><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service, or to assist the Company in analyzing how the Service is used.</li>
+            <li><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</li>
+            <li><strong>Website</strong> refers to EduLearn, accessible from <a href="https://senur795.github.io/learnwithsenur/" rel="external nofollow noopener" target="_blank">https://senur795.github.io/learnwithsenur/</a>.</li>
+            <li><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
+        </ul>
+
+        <!-- Additional Sections -->
+        <h2>How We Protect Your Data</h2>
+        <p>We implement a variety of security measures to maintain the safety of your personal information. These include encryption, secure servers, and regular security audits. We also limit access to your personal data to only those employees, contractors, and agents who need to know it to provide the Service.</p>
+
+        <h2>Your Rights</h2>
+        <p>You have the right to access, correct, or delete your personal data. You can also object to or restrict the processing of your data. To exercise these rights, please contact us at <a href="mailto:sdineth@asu.edu">sdineth@asu.edu</a>.</p>
+
+        <!-- Back Button -->
+        <a href="https://senur795.github.io/learnwithsenur/" class="back-button">Back to Home</a>
+    </div>
+
+    <script>
+        // Add intersection observer for scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('h2, h3, h4, p, li');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateX(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
